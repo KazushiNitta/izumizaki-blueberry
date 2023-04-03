@@ -152,6 +152,147 @@ body {
   }
 }
 
+@media screen and (min-width: 750px) {
+  .l-header__nav {
+    padding: 25px 25px 40px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .l-header__navInner {
+    margin: 0 150px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .l-header__contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.l-header__contentsMessage {
+  color: #afacbd;
+}
+@media screen and (min-width: 750px) {
+  .l-header__contentsMessage {
+    font-size: 14px;
+  }
+}
+
+.l-header__contentsTel {
+  color: #4F3912;
+  font-weight: bold;
+}
+@media screen and (min-width: 750px) {
+  .l-header__contentsTel {
+    font-size: 14px;
+  }
+}
+
+.l-header__telNumber {
+  margin-left: 5px;
+  color: #e19820;
+}
+@media screen and (min-width: 750px) {
+  .l-header__telNumber {
+    font-size: 20px;
+  }
+}
+
+.l-header__menu {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-header__menuLists {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.l-header__linkImg {
+  height: 22px;
+}
+
+@media screen and (min-width: 750px) {
+  .l-top {
+    padding: 150px;
+    background-image: url(images/bg_overview_pc.jpg);
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .l-top__mainContents {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.l-top__mainTitle {
+  color: #67510F;
+}
+@media screen and (min-width: 750px) {
+  .l-top__mainTitle {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+.l-top__text {
+  color: #67510F;
+}
+@media screen and (min-width: 750px) {
+  .l-top__text {
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .l-top__subContents {
+    margin-top: 40px;
+    display: flex;
+    gap: 0 60px;
+  }
+}
+
+.l-top__article {
+  color: #67510F;
+}
+@media screen and (min-width: 750px) {
+  .l-top__article {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .l-top__subTitle {
+    font-weight: normal;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .l-top__subText {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.7px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .l-top__img {
+    flex: 1;
+  }
+}
+
 /*// ==========================================================================
 // Object
 // ==========================================================================*/
