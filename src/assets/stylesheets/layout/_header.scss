@@ -1,0 +1,107 @@
+.l-header__image {
+  @include mq(pc) {
+    padding: 17% 30px;
+    background-image: url(images/bg_header_pc.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.l-header__imageInner {
+  @include mq(pc) {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.l-header__imageText {
+  @include mq(pc) {
+    height: fit-content;
+  }
+}
+
+.l-header__imageButtonLink {
+  @include mq(pc) {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #4F3912;
+    position: relative;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+}
+
+.l-header__imageGuide {
+  @include mq(pc) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.l-header__nav {
+  @include mq(pc) {
+    padding: 25px 25px 40px;
+  }
+}
+
+.l-header__navInner {
+  @include mq(pc) {
+    margin: 0 150px;
+  }
+}
+
+.l-header__contents {
+  @include mq(pc) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.l-header__contentsMessage {
+  color: #afacbd;
+
+  @include mq(pc) {
+    font-size: 14px;
+  }
+}
+
+.l-header__contentsTel {
+  color: #4F3912;
+  font-weight: bold;
+
+  @include mq(pc) {
+    font-size: 14px;
+  }
+}
+
+.l-header__telNumber {
+  margin-left: 5px;
+  color: #e19820;
+
+  @include mq(pc) {
+    font-size: 20px;
+  }
+}
+
+.l-header__menu {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-header__menuLists {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.l-header__linkImg {
+  height: 22px;
+}

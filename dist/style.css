@@ -106,6 +106,52 @@ body {
 /*// ==========================================================================
 // Layout
 // ==========================================================================*/
+@media screen and (min-width: 750px) {
+  .l-header__image {
+    padding: 17% 30px;
+    background-image: url(images/bg_header_pc.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .l-header__imageInner {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .l-header__imageText {
+    height: fit-content;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .l-header__imageButtonLink {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #4F3912;
+    position: relative;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .l-header__imageGuide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 /*// ==========================================================================
 // Object
 // ==========================================================================*/
@@ -115,10 +161,6 @@ body {
 /*// -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------*/
-.p-main__text {
-  color: red;
-}
-
 /*// -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------*/
