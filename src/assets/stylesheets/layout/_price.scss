@@ -1,0 +1,124 @@
+.l-price {
+  background-image: url(images/bg_paper.jpg);
+}
+
+.l-price__inner {
+  background: rgba(255, 255, 255, 0.5);
+
+  @include mq(pc) {
+    padding: 150px;
+    padding-bottom: 0;
+  }
+}
+
+.l-price__titleImg {
+  @include mq(pc) {
+    margin: 0 auto;
+  }
+}
+
+.l-price__mainContents {
+  @include mq(pc) {
+    margin-top: 50px;
+  }
+}
+
+.l-price__mainContent {
+  @include mq(pc) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.l-price__mainContent + .l-price__mainContent {
+  @include mq(pc) {
+    margin-top: 30px;
+  }
+}
+
+.l-price__dataTitle {
+  @include mq(pc) {
+    width: 35%;
+    display: flex;
+    align-items: flex-start;
+    gap: 0 5%;
+  }
+}
+
+.l-price__img {
+  @include mq(pc) {
+    width: 45px;
+  }
+}
+
+.l-price__heading {
+  color: #67510F;
+
+  @include mq(pc) {
+    font-size: 30px;
+    width: 155px;
+  }
+}
+
+.l-price__dataContent {
+  @include mq(pc) {
+    width: 50%;
+    line-height: 1.8;
+  }
+}
+
+.l-price__dataImg {
+  @include mq(pc) {
+    margin: 0 auto;
+  }
+}
+
+.l-price__dataWrapper {
+  @include mq(pc) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.l-price__dataTexts + .l-price__dataTexts {
+  @include mq(pc) {
+    margin-top: 15px;
+  }
+}
+
+.l-price__dataText {
+  @include mq(pc) {
+    font-size: 20px;
+    color: #67510F;
+  }
+}
+
+.l-price__supplement {
+  @include mq(pc) {
+    font-size: 15px;
+    color: #67510F;
+  }
+}
+
+.l-price__subTitle {
+  @include mq(pc) {
+    margin-top: 50px;
+    font-size: 35px;
+    font-weight: normal;
+    color: #67510F;
+    text-align: center;
+  }
+}
+
+.l-price__lists {
+  @include mq(pc) {
+    width: 650px;
+    margin: 0 auto;
+    font-size: 20px;
+    letter-spacing: .7px;
+    line-height: 2;
+    color: #67510F;
+  }
+}
