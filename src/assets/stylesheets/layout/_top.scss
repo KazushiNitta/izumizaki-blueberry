@@ -5,6 +5,13 @@
   }
 }
 
+.l-top__inner {
+  @include mq(pc) {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
 .l-top__mainContents {
   @include mq(pc) {
     width: fit-content;
@@ -27,7 +34,7 @@
 
   @include mq(pc) {
     margin-top: 20px;
-    line-height: 1.6;
+    line-height: 1.8;
     font-size: 20px;
     letter-spacing: .7px;
   }
@@ -60,7 +67,7 @@
 .l-top__subText {
   @include mq(pc) {
     font-size: 20px;
-    line-height: 1.6;
+    line-height: 1.8;
     letter-spacing: .7px;
     margin-top: 10px;
   }
