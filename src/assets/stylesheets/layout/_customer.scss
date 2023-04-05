@@ -1,0 +1,21 @@
+.l-customer {
+  @include mq(pc) {
+    padding: 150px;
+  }
+}
+
+.l-customer__titleImg {
+  @include mq(pc) {
+    margin: 0 auto;
+  }
+}
+
+.l-customer__contents {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-customer__voice {
+  width: 30%;
+}
