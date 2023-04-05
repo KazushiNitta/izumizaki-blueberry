@@ -1,0 +1,94 @@
+.l-facility {
+  background-image: url(images/bg_paper.jpg);
+}
+
+.l-facility__inner {
+  background: rgba(255, 255, 255, 0.5);
+
+  @include mq(pc) {
+    padding: 150px;
+    padding-bottom: 0;
+  }
+}
+
+.l-facility__titleImg {
+  @include mq(pc) {
+    margin: 0 auto;
+  }
+}
+
+.l-facility__mainContents {
+  margin-top: 50px;
+}
+
+.l-facility__wrapper {
+  @include mq(pc) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.l-facility__dataTitle {
+  @include mq(pc) {
+    width: 35%;
+    display: flex;
+    align-items: flex-start;
+    gap: 0 5%;
+  }
+}
+
+.l-facility__img {
+  @include mq(pc) {
+    width: 45px;
+    height: 55px;
+  }
+}
+
+.l-facility__heading {
+  color: #67510F;
+
+  @include mq(pc) {
+    font-size: 30px;
+    height: 55px;
+  }
+}
+
+.l-facility__dataContents {
+  color: #67510F;
+
+  @include mq(pc) {
+    font-size: 20px;
+    width: 50%;
+    letter-spacing: .7px;
+    line-height: 1.8;
+  }
+}
+
+.l-facility__cafeImg {
+  @include mq(pc) {
+    margin: 25px auto 0;
+  }
+}
+
+.l-facility__dataTexts {
+  @include mq(pc) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.l-facility__dataTexts:first-of-type {
+  margin-top: 15px;
+}
+
+.l-facility__dataTexts:nth-of-type(4) {
+  margin-top: 15px;
+}
+
+.l-facility__supplement {
+  font-size: 15px;
+}
+
+.l-facility__supplement:first-of-type {
+  margin-top: 15px;
+}
