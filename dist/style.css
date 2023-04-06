@@ -736,6 +736,77 @@ body {
   width: 30%;
 }
 
+.l-contact {
+  background-image: url(images/bg_paper.jpg);
+}
+
+.l-contact__inner {
+  background: rgba(255, 255, 255, 0.4);
+}
+@media screen and (min-width: 750px) {
+  .l-contact__inner {
+    padding: 150px;
+    padding-bottom: 0;
+  }
+}
+
+.l-contact__wrapper {
+  background-color: #EDF5FB;
+  padding: 100px 0;
+  box-shadow: 0 2px 3px rgba(128, 128, 128, 0.7);
+}
+
+.l-contact__titleImg {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.l-contact__container {
+  max-width: 650px;
+  margin: 20px auto;
+}
+
+.l-contanct__form {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.l-contact__label {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #67510F;
+}
+
+.l-contact__input {
+  width: 100%;
+  height: 55px;
+  margin-top: 10px;
+  border-style: none;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.l-contact__textarea {
+  width: 100%;
+  border-style: none;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.l-contact__button {
+  display: block;
+  width: 400px;
+  height: 65px;
+  font-size: 20px;
+  margin: 100px auto 0;
+  border-radius: 30px;
+  border: 4px solid #FFFFFF;
+  background-color: #DDDDDD;
+  color: #FFFFFF;
+}
+
 /*// ==========================================================================
 // Object
 // ==========================================================================*/
