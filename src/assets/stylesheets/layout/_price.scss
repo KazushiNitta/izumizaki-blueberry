@@ -6,8 +6,7 @@
   background: rgba(255, 255, 255, 0.4);
 
   @include mq(pc) {
-    padding: 150px;
-    padding-bottom: 0;
+    padding: 150px 30px 0;
   }
 }
 
@@ -19,7 +18,8 @@
 
 .l-price__mainContents {
   @include mq(pc) {
-    margin-top: 50px;
+    max-width: 1000px;
+    margin: 50px auto 0;
   }
 }
 
@@ -27,7 +27,6 @@
   @include mq(pc) {
     display: flex;
     justify-content: space-between;
-    max-width: 1000px;
     margin: 0 auto;
   }
 }
@@ -44,6 +43,7 @@
     display: flex;
     align-items: flex-start;
     gap: 0 5%;
+    flex: 0 3 460px;
   }
 }
 
@@ -66,7 +66,7 @@
 
 .l-price__dataContent {
   @include mq(pc) {
-    width: 50%;
+    width: 500px;
     line-height: 1.8;
   }
 }
@@ -99,7 +99,7 @@
 
 .l-price__supplement {
   @include mq(pc) {
-    font-size: 15px;
+    font-size: 14px;
     color: #67510F;
   }
 }
@@ -115,6 +115,8 @@
 }
 
 .l-price__lists {
+  color: #67510F;
+  
   @include mq(pc) {
     display: block;
     width: 650px;
@@ -122,7 +124,6 @@
     font-size: 20px;
     letter-spacing: .7px;
     line-height: 2;
-    color: #67510F;
   }
 }
 

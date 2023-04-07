@@ -6,8 +6,7 @@
   background: rgba(255, 255, 255, 0.4);
 
   @include mq(pc) {
-    padding: 150px;
-    padding-bottom: 0;
+    padding: 100px 30px 0;
   }
 }
 
@@ -28,7 +27,6 @@
   @include mq(pc) {
     display: flex;
     justify-content: space-between;
-    gap: 0 30px;
   }
 }
 
@@ -46,7 +44,13 @@
 
 .l-info__content {
   @include mq(pc) {
-    flex: 1;
+    flex: 0 1 460px;
+  }
+}
+
+.l-info__img {
+  @include mq(pc) {
+    width: 460px;
   }
 }
 
@@ -70,13 +74,9 @@
 .l-info__articleText {
   font-size: 20px;
   color: #67510F;
-  letter-spacing: .7px;
+  letter-spacing: 1px;
   line-height: 1.8;
   margin-top: 20px;
-}
-
-.l-info__img {
-  flex: 1;
 }
 
 .l-info__subContents {
@@ -101,6 +101,6 @@
 .l-info__subText {
   flex: 1;
   font-size: 18px;
-  letter-spacing: .7px;
+  letter-spacing: .8px;
   color: #67510F;
 }

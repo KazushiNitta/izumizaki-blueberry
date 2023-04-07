@@ -6,19 +6,28 @@
   background: rgba(255, 255, 255, 0.4);
 
   @include mq(pc) {
-    padding: 100px 150px;
+    padding: 100px 50px;
   }
 }
 
 .l-map_wrapper {
   background-color: #F5F5F5;
+
+  @include mq(pc) {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 900px;
+  }
 }
 
 .l-map__contents {
   color: #67510F;
-  max-width: 650px;
-  margin: 0 auto;
-  padding: 50px 0;
+
+  @include mq(pc) {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
 }
 
 .l-map__title {
@@ -30,39 +39,54 @@
 }
 
 .l-map__drawing {
-  margin-top: 50px;
-  width: 100%;
-  height: 400px;
   background-color: #FFFFFF;
+
+  @include mq(pc) {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+  }
 }
 
 .l-map__postCode {
-  margin-top: 12px;
-  font-size: 12px;
+  @include mq(pc) {
+    margin-top: 12px;
+    font-size: 12px;
+  }
 }
 
 .l-map__container {
-  margin-top: 5px;
-  display: flex;
-  gap: 30px;
+  @include mq(pc) {
+    margin-top: 5px;
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .l-map__address {
-  font-size: 20px;
-  font-weight: bold;
+  @include mq(pc) {
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
 
 .l-map__link {
-  text-decoration: underline;
+  @include mq(pc) {
+    text-decoration: underline;
+  }
 }
 
 .l-map__supplement {
-  margin-top: 10px;
-  font-size: 12px;
+  @include mq(pc) {
+    margin-top: 10px;
+    font-size: 12px;
+  }
 }
 
 .l-map__time {
-  margin-top: 10px;
-  font-size: 20px;
-  font-weight: bold;
+  @include mq(pc) {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
 }

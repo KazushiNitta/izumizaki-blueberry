@@ -4,7 +4,23 @@
     background-image: url(images/bg_header_pc.png);
     background-size: cover;
     background-position: center;
+    position: relative;
   }
+}
+
+.l-header__icon {
+  background-color: #FFFFFF;
+  width: 15%;
+  padding: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translateX(-50%);
+}
+
+.l-header__imgIcon {
+  margin: 0 auto;
 }
 
 .l-header__imageInner {
@@ -24,14 +40,15 @@
 }
 
 .l-header__imageButtonLink {
+  background-color: #4F3912;
+  border: 3px solid #fff;
+
   @include mq(pc) {
     display: block;
     width: 100px;
     height: 100px;
-    background-color: #4F3912;
     position: relative;
     border-radius: 50%;
-    border: 3px solid #fff;
   }
 }
 
@@ -52,7 +69,8 @@
 
 .l-header__navInner {
   @include mq(pc) {
-    margin: 0 150px;
+    margin: 0 auto;
+    max-width: 1000px;
   }
 }
 
@@ -78,6 +96,7 @@
 
   @include mq(pc) {
     font-size: 14px;
+    width: fit-content;
   }
 }
 
@@ -86,7 +105,7 @@
   color: #e19820;
 
   @include mq(pc) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -100,6 +119,22 @@
   display: flex;
   justify-content: space-between;
   width: 300px;
+}
+
+.l-header__item {
+  position: relative;
+}
+
+.l-header__item::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-top-color: #67510F;
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .l-header__linkImg {
