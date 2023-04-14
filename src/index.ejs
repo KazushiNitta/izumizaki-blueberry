@@ -11,9 +11,10 @@
     <div class="l-header__inner">
       <div class="l-header__image">
         <div class="l-header__imageInner">
-          <div class="l-header__imageText">
-            <img src="images/text_header_sub_pc.svg" alt="">
-          </div>
+          <picture class="l-header__imageText">
+            <source srcset="images/text_header_sub_sp.svg" media="(max-width: 749px)"/>
+            <img class="l-header__picture" src="images/text_header_sub_pc.svg" alt="">
+          </picture>
           <div class="l-header__imageButton">
             <!-- リンク先は後ほど記載 -->
             <a href="" class="l-header__imageButtonLink">
@@ -29,7 +30,7 @@
         <div class="l-header__navInner">
           <div class="l-header__contents">
             <div class="l-header__contentsMessage">
-              <p>お持ち帰りや配送も可能！<br>詳しくは下記をご覧ください！</p>
+              <p>お持ち帰りや配送も可能！<br class="l-header__br">詳しくは下記をご覧ください！</p>
             </div>
             <div class="l-header__contentsTel">
               <p>お電話でのお問い合わせ<span class="l-header__telNumber">0248-21-8666</span></p>
@@ -50,6 +51,62 @@
           </div>
         </div>
       </nav>
+      <nav class="l-header__pcNav">
+        <ul class="l-header__menuLists">
+          <li class="l-header__item"><a href=""><img class="l-header__linkImg" src="images/text_menu_top.png" alt=""></a></li>
+          <li class="l-header__item"><a href=""><img class="l-header__linkImg" src="images/text_menu_overview.png" alt=""></a></li>
+          <li class="l-header__item"><a href=""><img class="l-header__linkImg" src="images/text_menu_info.png" alt=""></a></li>
+        </ul>
+        <div class="l-header__pcIcon">
+          <img class="l-header__imgIcon" src="images/logo_header.svg" alt="">
+        </div>
+        <ul class="l-header__menuLists">
+          <li class="l-header__item"><a href=""><img class="l-header__linkImg" src="images/text_menu_fee.png" alt=""></a></li>
+          <li class="l-header__item"><a href=""><img class="l-header__linkImg" src="images/text_menu_voice.png" alt=""></a></li>
+        </ul>
+      </nav>
+      <button class="l-header__drawerIcon js-spMenu" onclick="openDrawer()">
+        <span class="l-header__drawerBar"></span>
+        <span class="l-header__drawerBar"></span>
+        <span class="l-header__drawerBar"></span>
+      </button>
+      <div class="l-header__spMenu js-active">
+        <img class="l-header__spImg" src="images/title_SPMenu.png" alt="">
+        <div class="l-header__spImageButton">
+          <!-- リンク先は後ほど記載 -->
+          <a href="" class="l-header__spImageButtonLink">
+            <img src="images/text_header_guide.svg" alt="" class="l-header__spImageGuide">
+          </a>
+        </div>
+        <!-- リンク先後ほど -->
+        <ul class="l-header__spMenuList">
+          <li class="l-header__spMenuItem">
+            <a class="l-header__spMenuLink" href="">
+              <img src="images/text_menu_top.png" alt="">
+            </a>
+          </li>
+          <li class="l-header__spMenuItem">
+            <a class="l-header__spMenuLink" href="">
+              <img src="images/text_menu_overview.png" alt="">
+            </a>
+          </li>
+          <li class="l-header__spMenuItem">
+            <a class="l-header__spMenuLink" href="">
+              <img src="images/text_menu_info.png" alt="">
+            </a>
+          </li>
+          <li class="l-header__spMenuItem">
+            <a class="l-header__spMenuLink" href="">
+              <img src="images/text_menu_fee.png" alt="">
+            </a>
+          </li>
+          <li class="l-header__spMenuItem">
+            <a class="l-header__spMenuLink" href="">
+              <img src="images/text_menu_voice.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
   <section class="l-top">
@@ -58,14 +115,15 @@
         <h1 class="l-top__mainTitle">
           <img src="images/text_overview.svg" alt="">
         </h1>
-        <p class="l-top__text">ブルーベリーに思いをよせ、栽培を始め<br>2年経った6月の末、まるで宝石のように美しい果実が<br>実をつけたあの時、あの感動に魅せられ、<br>こだわりのブルーベリーを栽培しております。<br>2013年のオープンより量より質を求め品種も<br>当初の13種類から23種類に増えました。<br>1200本のブルーベリーがすべて実るのには<br>2020年になりますが「質」を念頭に栽培を続けます。</p>
+        <p class="l-top__text">ブルーベリーに思いをよせ、栽培を始め2年経った6月の末、まるで宝石のように美しい果実が実をつけたあの時、あの感動に魅せられ、こだわりのブルーベリーを栽培しております。<br>2013年のオープンより量より質を求め品種も当初の13種類から23種類に増えました。<br>1200本のブルーベリーがすべて実るのには2020年になりますが「質」を念頭に栽培を続けます。</p>
       </div>
       <div class="l-top__subContents">
         <div class="l-top__article">
           <h2 class="l-top__subTitle">泉崎ブルーベリーの丘の特徴とブルーベリーの美味しさ</h2>
-          <p class="l-top__subText">当園は名称の通り小高い丘の上にあり地下150mからのミネラル豊富な地下水（ナノ水）と、花から実になって完熟まで酵素を噴霧してこだわりの美味しいブルーベリーを23品種栽培し、訪れていただいた方に喜ばれています。休憩所（カフェ）がありますから家族づれでゆっくり（時間制限なし）楽しみながら摘みとりができます。カフェでブルーベリー生ジュース等を楽しめます。</p>
+          <img class="l-top__spImg" src="images/image_overview.jpg" alt="">
+          <p class="l-top__subText">当園は名称の通り小高い丘の上にあり地下150mからのミネラル豊富な地下水（ナノ水）と、花から実になって完熟まで酵素を噴霧してこだわりの美味しいブルーベリーを23品種栽培し、訪れていただいた方に喜ばれています。<br>休憩所（カフェ）がありますから家族づれでゆっくり（時間制限なし）楽しみながら摘みとりができます。<br>カフェでブルーベリー生ジュース等を楽しめます。</p>
         </div>
-        <div class="l-top__img">
+        <div class="l-top__pcImg">
           <img src="images/image_overview.jpg" alt="">
         </div>
       </div>
@@ -80,27 +138,30 @@
         <div class="l-info__article">
           <div class="l-info__content">
             <h2 class="l-info__articleTitle">カーラズチョイス</h2>
-            <p class="l-info__articleText">甘味と酸味のバランスが良好・しっかりとした味が特徴。<br>毎年このブルーベリを求めて多くの方が遠方から当園へいらっしゃいます。<br>そのまま食べてもよし、ジャムにしてヨーグルトやパンと共に食べるもよし。<br>様々な食べ方で、いつもの食事が少し贅沢になるかも！？</p>
+            <img class="l-info__spImg" src="images/image_info_berry_01.jpg" alt="">
+            <p class="l-info__articleText">甘味と酸味のバランスが良好・しっかりとした味が特徴。<br class="l-info__br">毎年このブルーベリを求めて多くの方が遠方から当園へいらっしゃいます。<br class="l-info__br">そのまま食べてもよし、ジャムにしてヨーグルトやパンと共に食べるもよし。<br class="l-info__br">様々な食べ方で、いつもの食事が少し贅沢になるかも！？</p>
           </div>
-          <div class="l-info__img">
+          <div class="l-info__pcImg">
             <img src="images/image_info_berry_01.jpg" alt="">
           </div>
         </div>
         <div class="l-info__article">
           <div class="l-info__content">
             <h2 class="l-info__articleTitle">チャンドラー</h2>
-            <p class="l-info__articleText">特徴はなんと言ってもその大きさ！なんと500円玉ほどの圧倒的なサイズで食べ応え十分。<br>風味良好・完熟実は酸味と甘みがあり美味しい。<br>噂を聞いたお客様がわざわざ東京からお越しになることもあります。<br>お土産にも最適！<br>是非一度、本物を味わってみてください！！</p>
+            <img class="l-info__spImg" src="images/image_info_berry_02.jpg" alt="">
+            <p class="l-info__articleText">特徴はなんと言ってもその大きさ！なんと500円玉ほどの圧倒的なサイズで食べ応え十分。<br class="l-info__br">風味良好・完熟実は酸味と甘みがあり美味しい。<br class="l-info__br">噂を聞いたお客様がわざわざ東京からお越しになることもあります。<br class="l-info__br">お土産にも最適！<br class="l-info__br">是非一度、本物を味わってみてください！！</p>
           </div>
-          <div class="l-info__img">
+          <div class="l-info__pcImg">
             <img src="images/image_info_berry_02.jpg" alt="">
           </div>
         </div>
         <div class="l-info__article">
           <div class="l-info__content">
             <h2 class="l-info__articleTitle">オザークブルー</h2>
-            <p class="l-info__articleText">パリッと実がしっかりとして、風味よし味よしの優等生。<br>太陽の光をいっぱい浴びて濃縮された甘味は特に小さいお子さんに大人気です。<br>そのまま食べたり、ジュースにしたり、おやつに最適です！</p>
+            <img class="l-info__spImg" src="images/image_info_berry_03.jpg" alt="">
+            <p class="l-info__articleText">パリッと実がしっかりとして、風味よし味よしの優等生。<br class="l-info__br">太陽の光をいっぱい浴びて濃縮された甘味は特に小さいお子さんに大人気です！<br class="l-info__br">そのまま食べたり、ジュースにしたり、おやつに最適です！</p>
           </div>
-          <div class="l-info__img">
+          <div class="l-info__pcImg">
             <img src="images/image_info_berry_03.jpg" alt="">
           </div>
         </div>
@@ -221,7 +282,7 @@
             <span class="l-facility__heading">休憩所・カフェ</span>
           </dt>
           <dd class="l-facility__dataContents">
-            <p>期間限定甘味を販売！カフェだけのご利用もできます（入園料は無料）</p>
+            <p class="l-facility__supplement">期間限定甘味を販売！カフェだけのご利用もできます（入園料は無料）</p>
             <img class="l-facility__cafeImg" src="images/image_cafe.png" alt="">
             <div class="l-facility__dataTexts">
               <p class="l-facility__dataText">ブルーベリー生ジュース</p>
@@ -275,9 +336,12 @@
         <img class="l-customer__titleImg" src="images/text_voice.svg" alt="">
       </h1>
       <div class="l-customer__contents">
-        <img class="l-customer__voice" src="images/image_voice_01_pc.jpg" alt="">
-        <img class="l-customer__voice" src="images/image_voice_02_pc.jpg" alt="">
-        <img class="l-customer__voice" src="images/image_voice_03_pc.jpg" alt="">
+        <img class="l-customer__pcVoice" src="images/image_voice_01_pc.jpg" alt="">
+        <img class="l-customer__spVoice" src="images/image_voice_01_sp.jpg" alt="">
+        <img class="l-customer__pcVoice" src="images/image_voice_02_pc.jpg" alt="">
+        <img class="l-customer__spVoice" src="images/image_voice_02_sp.jpg" alt="">
+        <img class="l-customer__pcVoice" src="images/image_voice_03_pc.jpg" alt="">
+        <img class="l-customer__spVoice" src="images/image_voice_03_sp.jpg" alt="">
       </div>
     </div>
   </section>
@@ -320,10 +384,13 @@
       <a class="l-footer__top" href=""><img class="l-footer__topImg" src="images/icon_footer_top.svg" alt=""></a>
       <div class="l-footer__wrapper">
         <div class="l-footer__info">
-          <img src="images/text_footer.svg" alt="">
-          <p class="l-footer__tel">お急ぎの方は電話で<br><span class="l-footer__number">0248-21-8666</span></p>
+          <img class="l-footer__img" src="images/text_footer.svg" alt="">
+          <p class="l-footer__tel">お急ぎの方は電話で<br class="l-footer__br"><span class="l-footer__number">0248-21-8666</span></p>
+          <!-- PC画面用住所 -->
           <p class="l-footer__postCode">〒969-0105</p>
           <p class="l-footer__address">福島県西白河郡泉崎村大字踏瀬字大山3</p>
+          <!-- SP画面用住所 -->
+          <p class="l-footer__spAddress">〒969-0105　福島県西白河郡泉崎村大字踏瀬字大山3</p>
           <p class="l-footer__supplement">秋田犬の繁殖も行なっておりますので、お気軽にあ問い合わせください。</p>
         </div>
         <div class="l-footer__sns">
@@ -337,7 +404,7 @@
           </a>
         </div>
       </div>
-      <p class="l-footer__copyright">運営会社　株式会社イワキ　<span>&copy;<span>2023 Iwaki inc.</p>
+      <p class="l-footer__copyright">運営会社　株式会社イワキ　<br class="l-footer__copyBr">&copy;2023 Iwaki inc.</p>
     </div>
   </footer>
 </body>

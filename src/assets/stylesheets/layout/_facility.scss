@@ -8,11 +8,18 @@
   @include mq(pc) {
     padding: 150px 30px 0;
   }
+
+  @include mq(sp) {
+    padding: 50px 30px 0;
+  }
 }
 
 .l-facility__titleImg {
-  @include mq(pc) {
-    margin: 0 auto;
+  margin: 0 auto;
+
+  @include mq(sp) {
+    max-width: 150px;
+    max-height: 35px;
   }
 }
 
@@ -20,6 +27,11 @@
   @include mq(pc) {
     max-width: 1000px;
     margin: 50px auto 0;
+  }
+
+  @include mq(sp) {
+    max-width: 400px;
+    margin: 30px auto 0;
   }
 }
 
@@ -31,12 +43,17 @@
 }
 
 .l-facility__dataTitle {
+  display: flex;
+  gap: 0 5%;
+
   @include mq(pc) {
     width: 35%;
-    display: flex;
     align-items: flex-start;
-    gap: 0 5%;
     flex: 0 3 460px;
+  }
+
+  @include mq(sp) {
+    align-items: center;
   }
 }
 
@@ -44,6 +61,11 @@
   @include mq(pc) {
     width: 45px;
     height: 55px;
+  }
+
+  @include mq(sp) {
+    width: 25px;
+    height: 35px;
   }
 }
 
@@ -53,6 +75,10 @@
   @include mq(pc) {
     font-size: 30px;
     height: 55px;
+  }
+
+  @include mq(sp) {
+    font-size: 20px;
   }
 }
 
@@ -68,15 +94,15 @@
 }
 
 .l-facility__cafeImg {
-  @include mq(pc) {
-    margin: 25px auto 0;
-  }
+  margin: 25px auto 0;
 }
 
 .l-facility__dataTexts {
-  @include mq(pc) {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+
+  @include mq(sp) {
+    margin-top: 10px;
   }
 }
 
@@ -92,9 +118,21 @@
   }
 }
 
+.l-facility__dataText {
+  @include mq(sp) {
+    font-size: 14px;
+  }
+}
+
 .l-facility__supplement {
   @include mq(pc) {
     font-size: 15px;
+  }
+
+  @include mq(sp) {
+    margin-top: 10px;
+    font-size: 10px;
+    letter-spacing: 1px;
   }
 }
 

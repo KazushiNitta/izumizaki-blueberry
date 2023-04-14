@@ -2,11 +2,18 @@
   @include mq(pc) {
     padding: 100px 30px;
   }
+
+  @include mq(sp) {
+    padding: 50px 30px;
+  }
 }
 
 .l-customer__titleImg {
-  @include mq(pc) {
-    margin: 0 auto;
+  margin: 0 auto;
+
+  @include mq(sp) {
+    max-width: 150px;
+    max-height: 35px;
   }
 }
 
@@ -17,10 +24,25 @@
     justify-content: space-between;
     max-width: 900px;
   }
+
+  @include mq(sp) {
+    max-width: 400px;
+    margin: 20px auto;
+  }
 }
 
-.l-customer__voice {
+.l-customer__pcVoice {
+  width: 30%;
+
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+.l-customer__spVoice {
+  margin-top: 10px;
+
   @include mq(pc) {
-    width: 30%;
+    display: none;
   }
 }

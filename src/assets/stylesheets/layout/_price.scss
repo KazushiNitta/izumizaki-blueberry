@@ -8,11 +8,18 @@
   @include mq(pc) {
     padding: 150px 30px 0;
   }
+
+  @include mq(sp) {
+    padding: 45px 30px 0;
+  }
 }
 
 .l-price__titleImg {
-  @include mq(pc) {
-    margin: 0 auto;
+  margin: 0 auto;
+
+  @include mq(sp) {
+    max-width: 150px;
+    max-height: 35px;
   }
 }
 
@@ -21,6 +28,11 @@
     max-width: 1000px;
     margin: 50px auto 0;
   }
+
+  @include mq(sp) {
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
 
 .l-price__mainContent {
@@ -28,6 +40,10 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+  }
+
+  @include mq(sp) {
+    margin-top: 25px;
   }
 }
 
@@ -45,12 +61,23 @@
     gap: 0 5%;
     flex: 0 3 460px;
   }
+
+  @include mq(sp) {
+    display: flex;
+    align-items: center;
+    gap: 0 5%;
+  }
 }
 
 .l-price__img {
   @include mq(pc) {
     width: 45px;
     height: 55px;
+  }
+
+  @include mq(sp) {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -61,6 +88,10 @@
     font-size: 30px;
     width: 155px;
     height: 55px;
+  }
+
+  @include mq(sp) {
+    font-size: 20px;
   }
 }
 
@@ -75,10 +106,19 @@
   @include mq(pc) {
     margin: 0 auto;
   }
+
+  @include mq(sp) {
+    margin-top: 10px;
+  }
 }
 
 .l-price__dataWrapper {
   @include mq(pc) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include mq(sp) {
     display: flex;
     justify-content: space-between;
   }
@@ -91,39 +131,62 @@
 }
 
 .l-price__dataText {
+  color: #67510F;
+
   @include mq(pc) {
     font-size: 20px;
-    color: #67510F;
+  }
+
+  @include mq(sp) {
+    margin-top: 15px;
+    font-size: 14px;
   }
 }
 
 .l-price__supplement {
+  color: #67510F;
+
   @include mq(pc) {
     font-size: 14px;
-    color: #67510F;
+  }
+
+  @include mq(sp) {
+    margin-top: 5px;
+    font-size: 10px;
   }
 }
 
 .l-price__subTitle {
+  color: #67510F;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 50px;
+
   @include mq(pc) {
-    margin-top: 50px;
     font-size: 35px;
-    font-weight: normal;
-    color: #67510F;
-    text-align: center;
+  }
+
+  @include mq(sp) {
+    font-size: 20px;
   }
 }
 
 .l-price__lists {
   color: #67510F;
-  
+  line-height: 2;
+
   @include mq(pc) {
     display: block;
     width: 650px;
     margin: 0 auto;
     font-size: 20px;
     letter-spacing: .7px;
-    line-height: 2;
+  }
+
+  @include mq(sp) {
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
   }
 }
 
