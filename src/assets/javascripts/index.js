@@ -3,21 +3,24 @@
 window.addEventListener('load', function() {
 
   // 関数の定義
-  function openDrawer() {
-    document.getElementsByClassName('l-header__drawerBar')[0].classList.toggle('js-active');
-    document.getElementsByClassName('l-header__drawerBar')[1].classList.toggle('js-active');
-    document.getElementsByClassName('l-header__drawerBar')[2].classList.toggle('js-active');
-    document.getElementsByClassName('l-header__spMenu')[0].classList.toggle('js-active');
+  function toggleDrawer() {
+    $('.l-header__drawerBar').toggleClass('js-active');
+    $('.l-header__spMenu').toggleClass('js-active');
   }
   function closeDrawer() {
-    document.getElementsByClassName('l-header__drawerBar')[0].classList.remove('js-active');
-    document.getElementsByClassName('l-header__drawerBar')[1].classList.remove('js-active');
-    document.getElementsByClassName('l-header__drawerBar')[2].classList.remove('js-active');
-    document.getElementsByClassName('l-header__spMenu')[0].classList.add('js-active');
+    $('.l-header__drawerBar').removeClass('js-active');
+    $('.l-header__spMenu').addClass('js-active');
   }
 
-  // 関数の実行
-  window.openDrawer = openDrawer;
-  window.closeDrawer = closeDrawer;
+  // クリックイベントの実行
+  $('.l-header__drawerIcon').on('click', function() {
+    toggleDrawer();
+  });
+  $('.l-header__spImageButtonLink').on('click', function() {
+    closeDrawer();
+  });
+  $('.l-header__spMenuLink').on('click', function() {
+    closeDrawer();
+  });
 
 }, false);
