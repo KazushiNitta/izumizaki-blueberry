@@ -1,5 +1,8 @@
+// ファイルの読み込み
 import './assets/stylesheets/app.scss'
 import './assets/javascripts/index.js'
+
+// 画像の読み込み
 import './assets/images/bg_header_pc.png'
 import './assets/images/bg_header_sp.png'
 import './assets/images/text_header_sub_pc.svg'

@@ -17,6 +17,11 @@
 .l-price__titleImg {
   margin: 0 auto;
 
+  @include mq(pc) {
+    max-width: 220px;
+    max-height: 60px;
+  }
+
   @include mq(sp) {
     max-width: 150px;
     max-height: 35px;
@@ -54,18 +59,17 @@
 }
 
 .l-price__dataTitle {
+  display: flex;
+  gap: 0 5%;
+
   @include mq(pc) {
-    width: 35%;
-    display: flex;
     align-items: flex-start;
-    gap: 0 5%;
+    width: 35%;
     flex: 0 3 460px;
   }
 
   @include mq(sp) {
-    display: flex;
     align-items: center;
-    gap: 0 5%;
   }
 }
 
@@ -113,15 +117,8 @@
 }
 
 .l-price__dataWrapper {
-  @include mq(pc) {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  @include mq(sp) {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
 }
 
 .l-price__dataTexts + .l-price__dataTexts {
@@ -151,8 +148,8 @@
   }
 
   @include mq(sp) {
-    margin-top: 5px;
     font-size: 10px;
+    margin-top: 5px;
   }
 }
 

@@ -30,16 +30,15 @@
 
 .l-map__contents {
   color: #67510F;
+  margin: 0 auto;
 
   @include mq(pc) {
     max-width: 650px;
-    margin: 0 auto;
     padding: 50px 0;
   }
 
   @include mq(sp) {
     max-width: 400px;
-    margin: 0 auto;
   }
 }
 
@@ -94,14 +93,14 @@
 }
 
 .l-map__address {
+  font-weight: bold;
+
   @include mq(pc) {
     font-size: 20px;
-    font-weight: bold;
   }
 
   @include mq(sp) {
     font-size: 14px;
-    font-weight: bold;
   }
 }
 

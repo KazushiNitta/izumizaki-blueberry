@@ -19,62 +19,57 @@
 }
 
 .l-top__mainContents {
+  margin: 0 auto;
+
   @include mq(pc) {
     max-width: 650px;
-    margin: 0 auto;
     text-align: center;
   }
 
   @include mq(sp) {
     max-width: 400px;
-    margin: 0 auto;
   }
 }
 
 .l-top__mainTitle {
   color: #67510F;
+  margin: 0 auto;
 
   @include mq(pc) {
     width: fit-content;
-    margin: 0 auto;
   }
 
   @include mq(sp) {
-    margin: 0 auto;
-    text-align: center;
     width: 250px;
+    text-align: center;
   }
 }
 
 .l-top__text {
   color: #67510F;
+  margin-top: 20px;
+  line-height: 1.8;
+  letter-spacing: .7px;
 
   @include mq(pc) {
-    margin-top: 20px;
-    line-height: 1.8;
     font-size: 20px;
-    letter-spacing: .7px;
   }
 
   @include mq(sp) {
-    margin-top: 20px;
-    line-height: 1.8;
     font-size: 14px;
-    letter-spacing: .7px;
   }
 }
 
 .l-top__subContents {
+  display: flex;
+  justify-content: space-between;
+
   @include mq(pc) {
     margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
   }
 
   @include mq(sp) {
     margin: 20px auto 0;
-    display: flex;
-    justify-content: space-between;
     max-width: 400px;
   }
 }
@@ -88,13 +83,13 @@
 }
 
 .l-top__subTitle {
+  font-weight: normal;
+
   @include mq(pc) {
-    font-weight: normal;
     font-size: 30px;
   }
 
   @include mq(sp) {
-    font-weight: normal;
     font-size: 20px;
   }
 }
@@ -110,18 +105,16 @@
 }
 
 .l-top__subText {
+  line-height: 1.8;
+  letter-spacing: .7px;
+  margin-top: 10px;
+
   @include mq(pc) {
     font-size: 20px;
-    line-height: 1.8;
-    letter-spacing: .7px;
-    margin-top: 10px;
   }
 
   @include mq(sp) {
     font-size: 14px;
-    line-height: 1.8;
-    letter-spacing: .7px;
-    margin-top: 10px;
   }
 }
 

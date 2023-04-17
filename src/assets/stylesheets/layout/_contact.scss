@@ -25,13 +25,18 @@
   }
 
   @include mq(sp) {
-    max-width: 400px;
     padding: 30px 15px 100px;
+    max-width: 400px;
   }
 }
 
 .l-contact__titleImg {
   margin: 0 auto;
+
+  @include mq(pc) {
+    max-width: 220px;
+    max-height: 60px;
+  }
 
   @include mq(sp) {
     max-width: 150px;
@@ -94,8 +99,8 @@
   }
 
   @include mq(sp) {
-    padding: 5px;
     font-size: 14px;
+    padding: 5px;
   }
 }
 

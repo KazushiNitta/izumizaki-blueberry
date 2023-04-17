@@ -3,20 +3,19 @@
 }
 
 .l-header__image {
+    background-size: cover;
+    position: relative;
+
   @include mq(pc) {
     padding: 17% 30px;
     background-image: url(images/bg_header_pc.png);
-    background-size: cover;
     background-position: center;
-    position: relative;
   }
 
   @include mq(sp) {
     padding: 10% 30px 20%;
     background-image: url(images/bg_header_sp.png);
-    background-size: cover;
     background-position: center bottom;
-    position: relative;
   }
 }
 
@@ -46,16 +45,16 @@
 }
 
 .l-header__imageInner {
+  display: flex;
+
   @include mq(pc) {
     margin: 0 auto;
     max-width: 1000px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   @include mq(sp) {
-    display: flex;
     flex-flow: column;
     flex-direction: column-reverse;
   }
@@ -81,39 +80,22 @@
 .l-header__imageButtonLink {
   background-color: #4F3912;
   border: 3px solid #fff;
-
-  @include mq(pc) {
-    display: block;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    border-radius: 50%;
-  }
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
 
   @include mq(sp) {
-    display: block;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    position: relative;
     margin-left: auto;
   }
 }
 
 .l-header__imageGuide {
-  @include mq(pc) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  @include mq(sp) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .l-header__nav {
@@ -249,7 +231,7 @@
   background-color: #FFFFFF;
   border-radius: 50%;
   width: 15%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .l-header__drawerIcon {
@@ -271,29 +253,25 @@
 
 .l-header__drawerBar {
   display: block;
+  width: 65%;
   height: 3px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   background-color: #4F3912;
+  transition: all 0.3s;
 }
 
 .l-header__drawerBar:first-of-type {
-  width: 65%;
   top: 30%;
-  transition: all 0.3s;
 }
 
 .l-header__drawerBar:nth-of-type(2) {
-  width: 65%;
   top: 50%;
-  transition: all 0.3s;
 }
 
 .l-header__drawerBar:nth-of-type(3) {
-  width: 65%;
   top: 70%;
-  transition: all 0.3s;
 }
 
 .l-header__drawerBar.js-active:first-of-type {

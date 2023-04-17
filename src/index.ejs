@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>いずみざきブルーベリーの丘</title>
 </head>
+
 <body>
-  <header class="l-header">
+  <header class="l-header" id="header">
     <div class="l-header__inner">
       <div class="l-header__image">
         <div class="l-header__imageInner">
           <picture class="l-header__imageText">
-            <source srcset="images/text_header_sub_sp.svg" media="(max-width: 749px)"/>
+            <source srcset="images/text_header_sub_sp.svg" media="(max-width: 749px)" />
             <img class="l-header__picture" src="images/text_header_sub_pc.svg" alt="">
           </picture>
           <div class="l-header__imageButton">
-            <!-- リンク先は後ほど記載 -->
-            <a href="" class="l-header__imageButtonLink">
+            <a href="#facility" class="l-header__imageButtonLink">
               <img src="images/text_header_guide.svg" alt="" class="l-header__imageGuide">
             </a>
           </div>
@@ -38,31 +39,39 @@
           </div>
           <div class="l-header__menu">
             <ul class="l-header__menuLists">
-              <!-- リンク先は後ほど記載 -->
-              <li class="l-header__item"><a href=""><img class="l-header__linkImg" src="images/text_menu_top.png" alt=""></a></li>
-              <li class="l-header__item"><a href=""><img class="l-header__linkImg" src="images/text_menu_overview.png" alt=""></a></li>
-              <li class="l-header__item"><a href=""><img class="l-header__linkImg" src="images/text_menu_info.png" alt=""></a></li>
+              <li class="l-header__item"><a href="#header"><img class="l-header__linkImg" src="images/text_menu_top.png"
+                    alt=""></a></li>
+              <li class="l-header__item"><a href="#top"><img class="l-header__linkImg"
+                    src="images/text_menu_overview.png" alt=""></a></li>
+              <li class="l-header__item"><a href="#info"><img class="l-header__linkImg" src="images/text_menu_info.png"
+                    alt=""></a></li>
             </ul>
             <ul class="l-header__menuLists">
-              <!-- リンク先は後ほど記載 -->
-              <li class="l-header__item"><a href=""><img class="l-header__linkImg" src="images/text_menu_fee.png" alt=""></a></li>
-              <li class="l-header__item"><a href=""><img class="l-header__linkImg" src="images/text_menu_voice.png" alt=""></a></li>
+              <li class="l-header__item"><a href="#price"><img class="l-header__linkImg" src="images/text_menu_fee.png"
+                    alt=""></a></li>
+              <li class="l-header__item"><a href="#customer"><img class="l-header__linkImg"
+                    src="images/text_menu_voice.png" alt=""></a></li>
             </ul>
           </div>
         </div>
       </nav>
       <nav class="l-header__pcNav">
         <ul class="l-header__menuLists">
-          <li class="l-header__item"><a href=""><img class="l-header__linkImg" src="images/text_menu_top.png" alt=""></a></li>
-          <li class="l-header__item"><a href=""><img class="l-header__linkImg" src="images/text_menu_overview.png" alt=""></a></li>
-          <li class="l-header__item"><a href=""><img class="l-header__linkImg" src="images/text_menu_info.png" alt=""></a></li>
+          <li class="l-header__item"><a href="#header"><img class="l-header__linkImg" src="images/text_menu_top.png"
+                alt=""></a></li>
+          <li class="l-header__item"><a href="#top"><img class="l-header__linkImg" src="images/text_menu_overview.png"
+                alt=""></a></li>
+          <li class="l-header__item"><a href="#info"><img class="l-header__linkImg" src="images/text_menu_info.png"
+                alt=""></a></li>
         </ul>
         <div class="l-header__pcIcon">
           <img class="l-header__imgIcon" src="images/logo_header.svg" alt="">
         </div>
         <ul class="l-header__menuLists">
-          <li class="l-header__item"><a href=""><img class="l-header__linkImg" src="images/text_menu_fee.png" alt=""></a></li>
-          <li class="l-header__item"><a href=""><img class="l-header__linkImg" src="images/text_menu_voice.png" alt=""></a></li>
+          <li class="l-header__item"><a href="#price"><img class="l-header__linkImg" src="images/text_menu_fee.png"
+                alt=""></a></li>
+          <li class="l-header__item"><a href="#customer"><img class="l-header__linkImg" src="images/text_menu_voice.png"
+                alt=""></a></li>
         </ul>
       </nav>
       <button class="l-header__drawerIcon js-spMenu" onclick="openDrawer()">
@@ -73,35 +82,34 @@
       <div class="l-header__spMenu js-active">
         <img class="l-header__spImg" src="images/title_SPMenu.png" alt="">
         <div class="l-header__spImageButton">
-          <!-- リンク先は後ほど記載 -->
-          <a href="" class="l-header__spImageButtonLink">
+          <a href="#facility" class="l-header__spImageButtonLink" onclick="closeDrawer()">
             <img src="images/text_header_guide.svg" alt="" class="l-header__spImageGuide">
           </a>
         </div>
         <!-- リンク先後ほど -->
         <ul class="l-header__spMenuList">
           <li class="l-header__spMenuItem">
-            <a class="l-header__spMenuLink" href="">
+            <a class="l-header__spMenuLink" href="#header" onclick="closeDrawer()">
               <img src="images/text_menu_top.png" alt="">
             </a>
           </li>
           <li class="l-header__spMenuItem">
-            <a class="l-header__spMenuLink" href="">
+            <a class="l-header__spMenuLink" href="#top" onclick="closeDrawer()">
               <img src="images/text_menu_overview.png" alt="">
             </a>
           </li>
           <li class="l-header__spMenuItem">
-            <a class="l-header__spMenuLink" href="">
+            <a class="l-header__spMenuLink" href="#info" onclick="closeDrawer()">
               <img src="images/text_menu_info.png" alt="">
             </a>
           </li>
           <li class="l-header__spMenuItem">
-            <a class="l-header__spMenuLink" href="">
+            <a class="l-header__spMenuLink" href="#price" onclick="closeDrawer()">
               <img src="images/text_menu_fee.png" alt="">
             </a>
           </li>
           <li class="l-header__spMenuItem">
-            <a class="l-header__spMenuLink" href="">
+            <a class="l-header__spMenuLink" href="#customer" onclick="closeDrawer()">
               <img src="images/text_menu_voice.png" alt="">
             </a>
           </li>
@@ -109,19 +117,23 @@
       </div>
     </div>
   </header>
-  <section class="l-top">
+  <section class="l-top" id="top">
     <div class="l-top__inner">
       <div class="l-top__mainContents">
         <h1 class="l-top__mainTitle">
           <img src="images/text_overview.svg" alt="">
         </h1>
-        <p class="l-top__text">ブルーベリーに思いをよせ、栽培を始め2年経った6月の末、まるで宝石のように美しい果実が実をつけたあの時、あの感動に魅せられ、こだわりのブルーベリーを栽培しております。<br>2013年のオープンより量より質を求め品種も当初の13種類から23種類に増えました。<br>1200本のブルーベリーがすべて実るのには2020年になりますが「質」を念頭に栽培を続けます。</p>
+        <p class="l-top__text">
+          ブルーベリーに思いをよせ、栽培を始め2年経った6月の末、まるで宝石のように美しい果実が実をつけたあの時、あの感動に魅せられ、こだわりのブルーベリーを栽培しております。<br>2013年のオープンより量より質を求め品種も当初の13種類から23種類に増えました。<br>1200本のブルーベリーがすべて実るのには2020年になりますが「質」を念頭に栽培を続けます。
+        </p>
       </div>
       <div class="l-top__subContents">
         <div class="l-top__article">
           <h2 class="l-top__subTitle">泉崎ブルーベリーの丘の特徴とブルーベリーの美味しさ</h2>
           <img class="l-top__spImg" src="images/image_overview.jpg" alt="">
-          <p class="l-top__subText">当園は名称の通り小高い丘の上にあり地下150mからのミネラル豊富な地下水（ナノ水）と、花から実になって完熟まで酵素を噴霧してこだわりの美味しいブルーベリーを23品種栽培し、訪れていただいた方に喜ばれています。<br>休憩所（カフェ）がありますから家族づれでゆっくり（時間制限なし）楽しみながら摘みとりができます。<br>カフェでブルーベリー生ジュース等を楽しめます。</p>
+          <p class="l-top__subText">
+            当園は名称の通り小高い丘の上にあり地下150mからのミネラル豊富な地下水（ナノ水）と、花から実になって完熟まで酵素を噴霧してこだわりの美味しいブルーベリーを23品種栽培し、訪れていただいた方に喜ばれています。<br>休憩所（カフェ）がありますから家族づれでゆっくり（時間制限なし）楽しみながら摘みとりができます。<br>カフェでブルーベリー生ジュース等を楽しめます。
+          </p>
         </div>
         <div class="l-top__pcImg">
           <img src="images/image_overview.jpg" alt="">
@@ -129,7 +141,7 @@
       </div>
     </div>
   </section>
-  <section class="l-info">
+  <section class="l-info" id="info">
     <div class="l-info__inner">
       <h1 class="l-info__mainTitle">
         <img class="l-info__titleImg" src="images/text_info.svg" alt="">
@@ -139,7 +151,10 @@
           <div class="l-info__content">
             <h2 class="l-info__articleTitle">カーラズチョイス</h2>
             <img class="l-info__spImg" src="images/image_info_berry_01.jpg" alt="">
-            <p class="l-info__articleText">甘味と酸味のバランスが良好・しっかりとした味が特徴。<br class="l-info__br">毎年このブルーベリを求めて多くの方が遠方から当園へいらっしゃいます。<br class="l-info__br">そのまま食べてもよし、ジャムにしてヨーグルトやパンと共に食べるもよし。<br class="l-info__br">様々な食べ方で、いつもの食事が少し贅沢になるかも！？</p>
+            <p class="l-info__articleText">甘味と酸味のバランスが良好・しっかりとした味が特徴。<br
+                class="l-info__br">毎年このブルーベリを求めて多くの方が遠方から当園へいらっしゃいます。<br
+                class="l-info__br">そのまま食べてもよし、ジャムにしてヨーグルトやパンと共に食べるもよし。<br class="l-info__br">様々な食べ方で、いつもの食事が少し贅沢になるかも！？
+            </p>
           </div>
           <div class="l-info__pcImg">
             <img src="images/image_info_berry_01.jpg" alt="">
@@ -149,7 +164,9 @@
           <div class="l-info__content">
             <h2 class="l-info__articleTitle">チャンドラー</h2>
             <img class="l-info__spImg" src="images/image_info_berry_02.jpg" alt="">
-            <p class="l-info__articleText">特徴はなんと言ってもその大きさ！なんと500円玉ほどの圧倒的なサイズで食べ応え十分。<br class="l-info__br">風味良好・完熟実は酸味と甘みがあり美味しい。<br class="l-info__br">噂を聞いたお客様がわざわざ東京からお越しになることもあります。<br class="l-info__br">お土産にも最適！<br class="l-info__br">是非一度、本物を味わってみてください！！</p>
+            <p class="l-info__articleText">特徴はなんと言ってもその大きさ！なんと500円玉ほどの圧倒的なサイズで食べ応え十分。<br
+                class="l-info__br">風味良好・完熟実は酸味と甘みがあり美味しい。<br class="l-info__br">噂を聞いたお客様がわざわざ東京からお越しになることもあります。<br
+                class="l-info__br">お土産にも最適！<br class="l-info__br">是非一度、本物を味わってみてください！！</p>
           </div>
           <div class="l-info__pcImg">
             <img src="images/image_info_berry_02.jpg" alt="">
@@ -159,7 +176,9 @@
           <div class="l-info__content">
             <h2 class="l-info__articleTitle">オザークブルー</h2>
             <img class="l-info__spImg" src="images/image_info_berry_03.jpg" alt="">
-            <p class="l-info__articleText">パリッと実がしっかりとして、風味よし味よしの優等生。<br class="l-info__br">太陽の光をいっぱい浴びて濃縮された甘味は特に小さいお子さんに大人気です！<br class="l-info__br">そのまま食べたり、ジュースにしたり、おやつに最適です！</p>
+            <p class="l-info__articleText">パリッと実がしっかりとして、風味よし味よしの優等生。<br
+                class="l-info__br">太陽の光をいっぱい浴びて濃縮された甘味は特に小さいお子さんに大人気です！<br
+                class="l-info__br">そのまま食べたり、ジュースにしたり、おやつに最適です！</p>
           </div>
           <div class="l-info__pcImg">
             <img src="images/image_info_berry_03.jpg" alt="">
@@ -169,13 +188,17 @@
       <div class="l-info__subContents">
         <h2 class="l-info__subTitle">商品紹介</h2>
         <div class="l-info__wrapper">
-          <p class="l-info__subText">6月下旬（気候により多少変動）、風味のあるデュークからスタートし、酸味もあるが甘味が強いフロリダサファイア、風味のあるフロリダスター、甘くほのかな酸味のあるハナンズ・チョイス、果実は硬く風味のあるニューハノバー、甘み酸味のバランスがよいカーラズチョイスが7月上旬〜中旬、風味の高いブルークロップ、風味のすぐれるレガシー、特大サイズのチャンドラーと続き糖酸が調和しているブリジッタ、風味がすばらしいオザークブルーが7月下旬〜8月上旬で11品種のハイブッシュが終了し8月上旬〜8月中旬からはラビットアイのとても甘い中粒アラパハ、ピンク色の甘いピンクレモネード大粒で甘味のあるオクラッカニーで終了です。</p>
-          <p class="l-info__subText">また2019年にはハイブッシュ系の晩生新品種、大粒リバティ（7月下旬〜8月中旬）、大粒オーロラ（8月中旬〜9月上旬）が摘み取とれます。2020年にはハイブッシュ系新品種大粒メドラーク（6月下7月〜上旬）大粒ドレイパー（7月中旬〜8月上旬）、大粒〜特大トワライト（7月上旬〜中旬）、大粒エメラルド（7月上旬〜中旬）、ラビット渓の大粒〜特大タイタン（7月下旬〜8月中旬）、中粒ブライトウェル（7月下旬〜8月中旬）、大粒オンズロー（8月中旬〜9月中旬）楽しみな品種を栽培しています。全ての本数は1200本になります。<br>プルーンも棚栽培で植栽してみました（試栽培）</p>
+          <p class="l-info__subText">
+            6月下旬（気候により多少変動）、風味のあるデュークからスタートし、酸味もあるが甘味が強いフロリダサファイア、風味のあるフロリダスター、甘くほのかな酸味のあるハナンズ・チョイス、果実は硬く風味のあるニューハノバー、甘み酸味のバランスがよいカーラズチョイスが7月上旬〜中旬、風味の高いブルークロップ、風味のすぐれるレガシー、特大サイズのチャンドラーと続き糖酸が調和しているブリジッタ、風味がすばらしいオザークブルーが7月下旬〜8月上旬で11品種のハイブッシュが終了し8月上旬〜8月中旬からはラビットアイのとても甘い中粒アラパハ、ピンク色の甘いピンクレモネード大粒で甘味のあるオクラッカニーで終了です。
+          </p>
+          <p class="l-info__subText">
+            また2019年にはハイブッシュ系の晩生新品種、大粒リバティ（7月下旬〜8月中旬）、大粒オーロラ（8月中旬〜9月上旬）が摘み取とれます。2020年にはハイブッシュ系新品種大粒メドラーク（6月下7月〜上旬）大粒ドレイパー（7月中旬〜8月上旬）、大粒〜特大トワライト（7月上旬〜中旬）、大粒エメラルド（7月上旬〜中旬）、ラビット渓の大粒〜特大タイタン（7月下旬〜8月中旬）、中粒ブライトウェル（7月下旬〜8月中旬）、大粒オンズロー（8月中旬〜9月中旬）楽しみな品種を栽培しています。全ての本数は1200本になります。<br>プルーンも棚栽培で植栽してみました（試栽培）
+          </p>
         </div>
       </div>
     </div>
   </section>
-  <section class="l-price">
+  <section class="l-price" id="price">
     <div class="l-price__inner">
       <h1 class="l-price__mainTitle">
         <img class="l-price__titleImg" src="images/text_fee.svg" alt="">
@@ -270,7 +293,7 @@
       </div>
     </div>
   </section>
-  <section class="l-facility">
+  <section class="l-facility" id="facility">
     <div class="l-facility__inner">
       <h1 class="l-facility__mainTitle">
         <img class="l-facility__titleImg" src="images/text_guide.svg" alt="">
@@ -330,7 +353,7 @@
       </div>
     </div>
   </section>
-  <section class="l-customer">
+  <section class="l-customer" id="customer">
     <div class="l-customer__inner">
       <h1 class="l-customer__title">
         <img class="l-customer__titleImg" src="images/text_voice.svg" alt="">
@@ -371,7 +394,8 @@
             </div>
             <div class="l-contanct__form">
               <label class="l-contact__label" for="">内容</label>
-              <textarea class="l-contact__textarea" name="" id="" cols="30" rows="5" placeholder="例：オススメの食べ方はありますか。"></textarea>
+              <textarea class="l-contact__textarea" name="" id="" cols="30" rows="5"
+                placeholder="例：オススメの食べ方はありますか。"></textarea>
             </div>
             <button class="l-contact__button">確認</button>
           </form>
@@ -381,11 +405,12 @@
   </section>
   <footer class="l-footer">
     <div class="l-footer__inner">
-      <a class="l-footer__top" href=""><img class="l-footer__topImg" src="images/icon_footer_top.svg" alt=""></a>
+      <a class="l-footer__top" href="#header"><img class="l-footer__topImg" src="images/icon_footer_top.svg" alt=""></a>
       <div class="l-footer__wrapper">
         <div class="l-footer__info">
           <img class="l-footer__img" src="images/text_footer.svg" alt="">
-          <p class="l-footer__tel">お急ぎの方は電話で<br class="l-footer__br"><span class="l-footer__number">0248-21-8666</span></p>
+          <p class="l-footer__tel">お急ぎの方は電話で<br class="l-footer__br"><span class="l-footer__number">0248-21-8666</span>
+          </p>
           <!-- PC画面用住所 -->
           <p class="l-footer__postCode">〒969-0105</p>
           <p class="l-footer__address">福島県西白河郡泉崎村大字踏瀬字大山3</p>
@@ -394,11 +419,13 @@
           <p class="l-footer__supplement">秋田犬の繁殖も行なっておりますので、お気軽にあ問い合わせください。</p>
         </div>
         <div class="l-footer__sns">
+          <!-- リンク先は後ほど記載 -->
           <a class="l-footer__link" href="">
             <img class="l-footer__icon" src="images/icon_footer_facebook.svg" alt="">
             <p class="l-footer__facebook">Facebook<br>に投稿</p>
           </a>
-          <a class="l-footer__link"  href="">
+          <!-- リンク先は後ほど記載 -->
+          <a class="l-footer__link" href="">
             <img class="l-footer__icon" src="images/icon_footer_twitter.png" alt="">
             <p class="l-footer__twiter">twitter<br>に投稿</p>
           </a>
@@ -408,4 +435,5 @@
     </div>
   </footer>
 </body>
+
 </html>
