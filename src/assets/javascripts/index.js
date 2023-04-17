@@ -11,6 +11,15 @@ window.addEventListener('load', function() {
     $('.l-header__drawerBar').removeClass('js-active');
     $('.l-header__spMenu').addClass('js-active');
   }
+  function fixedNav() {
+    let navBottom = $('.l-header__nav').offset().top + $('.l-header__nav').innerHeight();
+    let scroll = $(window).scrollTop();
+    if(scroll >= navBottom) {
+      $('.l-header__pcNav').addClass('js-scroll');
+    } else {
+      $('.l-header__pcNav').removeClass('js-scroll');
+    }
+  }
 
   // クリックイベントの実行
   $('.l-header__drawerIcon').on('click', function() {
@@ -21,6 +30,11 @@ window.addEventListener('load', function() {
   });
   $('.l-header__spMenuLink').on('click', function() {
     closeDrawer();
+  });
+
+  // スクロールイベントの実行
+  $(window).scroll(function() {
+    fixedNav();
   });
 
 }, false);

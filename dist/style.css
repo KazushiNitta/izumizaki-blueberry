@@ -90,6 +90,10 @@ select {
     scroll-behavior: auto !important;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   vertical-align: middle;
 }
@@ -335,12 +339,13 @@ body {
   justify-content: space-around;
   border-bottom: 1px solid #4F3912;
   position: fixed;
-  top: 0;
+  top: -20vh;
   left: 0;
   background-color: #FFFFFF;
   z-index: 100;
   padding: 0 20px;
   width: 100vw;
+  transition: all 0.3s;
 }
 @media screen and (max-width: 749px) {
   .l-header__pcNav {
@@ -349,7 +354,7 @@ body {
 }
 
 .l-header__pcNav.js-scroll {
-  top: -20vh;
+  top: 0;
 }
 
 .l-header__pcIcon {
